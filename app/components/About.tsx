@@ -2,8 +2,8 @@
 
 export default function About() {
     return(
-        <div>
-            My name is Andy Johnson and I design and build web applications.
-        </div>
+        <section id="about" className="bg-celadon w-full flex justify-center p-20">
+            About
+        </section>
     );
 }

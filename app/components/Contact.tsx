@@ -2,8 +2,8 @@
 
 export default function Contact() {
     return(
-        <div>
+        <section id="contact" className="bg-yellow-green w-full flex justify-center  p-20">
             Contact
-        </div>
+        </section>
     );
 }

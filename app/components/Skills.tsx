@@ -2,8 +2,8 @@
 
 export default function Skills() {
     return(
-        <div>
+        <section id="skills" className="bg-dark-spring-green w-full flex justify-center p-20">
             Skills
-        </div>
+        </section>
     );
 }
