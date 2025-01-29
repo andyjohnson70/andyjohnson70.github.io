@@ -3,5 +3,103 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arvo, serif;
+}
+
+.rainDrop {
+  position: absolute;
+  height: 100px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: rain-fall linear infinite;
+}
+
+.rainDrop:nth-child(3n+1) > .stem {
+  background: linear-gradient(transparent, #0ff);
+}
+
+.rainDrop:nth-child(3n+1) > .splat {
+  border-top-color: #0ff;
+}
+
+.rainDrop:nth-child(3n+2) > .stem {
+  background: linear-gradient(transparent, #0f0);
+}
+
+.rainDrop:nth-child(3n+2) > .splat {
+  border-top-color: #0f0;
+}
+
+.rainDrop:nth-child(3n+3) > .stem {
+  background: linear-gradient(transparent, #f00);
+}
+
+.rainDrop:nth-child(3n+3) > .splat {
+  border-top-color: #f00;
+}
+
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(calc(100vh - 100px));
+  }
+  80.01%, 100% {
+    transform: translateY(calc(100vh - 100px));
+  }
+}
+
+.stem {
+  position: inherit;
+  height: 100px;
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  80.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 15px;
+  height: 10px;
+  position: inherit;
+  top: 95px;
+  left: -7px;
+  border-top: 2px dotted;
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
 }

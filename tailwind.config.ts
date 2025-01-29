@@ -16,7 +16,7 @@ export default {
         'tea-green': '#DEF4C6',
         'cal-poly-green': '#1B512D',
         'yellow-green': '#B1CF5F'
-      },
+      }
     },
   },
   plugins: [],
