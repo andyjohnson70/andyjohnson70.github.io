@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 20px;
+}
+
 body {
   font-family: Arvo, serif;
 }
@@ -15,27 +19,27 @@ body {
 }
 
 .rainDrop:nth-child(3n+1) > .stem {
-  background: linear-gradient(transparent, #0ff);
+  background: linear-gradient(transparent, #1A759F);
 }
 
 .rainDrop:nth-child(3n+1) > .splat {
-  border-top-color: #0ff;
+  border-top-color: #1A759F;
 }
 
 .rainDrop:nth-child(3n+2) > .stem {
-  background: linear-gradient(transparent, #0f0);
+  background: linear-gradient(transparent, #1E6091);
 }
 
 .rainDrop:nth-child(3n+2) > .splat {
-  border-top-color: #0f0;
+  border-top-color: #1E6091;
 }
 
 .rainDrop:nth-child(3n+3) > .stem {
-  background: linear-gradient(transparent, #f00);
+  background: linear-gradient(transparent, #168AAD);
 }
 
 .rainDrop:nth-child(3n+3) > .splat {
-  border-top-color: #f00;
+  border-top-color: #168AAD;
 }
 
 @keyframes rain-fall {

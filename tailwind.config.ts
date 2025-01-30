@@ -15,7 +15,7 @@ export default {
         'celadon': '#73E2A7',
         'tea-green': '#DEF4C6',
         'cal-poly-green': '#1B512D',
-        'yellow-green': '#B1CF5F'
+        'yellow-green': '#B1CF5F',
       }
     },
   },

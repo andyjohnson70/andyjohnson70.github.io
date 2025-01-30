@@ -4,7 +4,8 @@ import "./globals.css";
 
 const arvoSans = Arvo({
   variable: "--font-arvo-serif",
-  weight: "700"
+  subsets: ["latin"],
+  weight: "400"
 });
 
 
