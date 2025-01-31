@@ -12,7 +12,7 @@ export default function Projects() {
                 <ProjectRow 
                     image={tft}
                     title='TFT Rolldown Simulator'
-                    description='Made with React, TypeScript, NextJS, PostgreSQL, and deployed with Vercel'
+                    description='A tool that I made to practice my favorite strategy game, Teamfight Tactics, that is build with React, TypeScript, NextJS, PostgreSQL, and deployed and managed with Vercel.'
                     link='https://github.com/andyjohnson70/TFT-Rolldown-Simulator' />
             </div>
         </section>
@@ -30,7 +30,7 @@ function ProjectRow(props: ProjectRowProps) {
                     <div className='text-center text-xl font-bold pt-5'>
                         {props.title}
                     </div>
-                    <div className='pt-5'>
+                    <div className='text-sm pt-5'>
                         {props.description}
                     </div>
                     <a className='w-fit pt-5' href={props.link} target="_blank"><Image src={github} width={32} height={32} alt='GitHub Repo' /></a>
