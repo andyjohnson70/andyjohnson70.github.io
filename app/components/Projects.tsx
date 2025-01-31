@@ -21,11 +21,11 @@ export default function Projects() {
 
 function ProjectRow(props: ProjectRowProps) {
     return(
-        <div className='flex flex-row gap-5 w-full md:w-9/12 justify-center mx-auto'>
-            <div className='basis-1/2'>
+        <div className='flex flex-col sm:flex-row gap-5 w-full sm:w-9/12 justify-center mx-auto'>
+            <div className='sm:basis-1/2'>
                 <Image className='w-full rounded-lg border border-solid border-black' src={props.image} alt="" />
             </div>
-            <div className='basis-1/2'>
+            <div className='sm:basis-1/2'>
                 <div className='flex flex-col'>
                     <div className='text-center text-xl font-bold pt-5'>
                         {props.title}

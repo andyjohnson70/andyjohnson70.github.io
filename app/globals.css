@@ -10,6 +10,10 @@ body {
   font-family: Arvo, serif;
 }
 
+#home, #about, #projects, #contact {
+  scroll-margin-top: 50px;
+}
+
 .rainDrop {
   position: absolute;
   height: 100px;

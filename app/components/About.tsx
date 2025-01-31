@@ -2,8 +2,8 @@
 
 export default function About() {
     return(
-        <section id="about" className="bg-celadon w-full flex justify-center flex-col gap-20 md:flex-row p-10">
-            <div className="basis-full md:basis-1/2">
+        <section id="about" className="bg-celadon w-full flex justify-center flex-col gap-20 sm:flex-row p-10">
+            <div className="basis-full sm:basis-1/2">
                 <div className="text-center pb-10 text-3xl underline underline-offset-8 decoration-tea-green">
                     About Me
                 </div>
@@ -17,7 +17,7 @@ export default function About() {
                 </div>
             </div>
             
-            <div className="basis-full md:basis-1/2">
+            <div className="basis-full sm:basis-1/2">
                 <div className="text-center pb-10 text-3xl underline underline-offset-8 decoration-tea-green">
                     Skills
                 </div>

@@ -49,10 +49,10 @@ export default function Landing() {
                 }) : null}
             </div>
             <div className="flex flex-col gap-12 justify-center h-screen items-center">
-                <div className="text-7xl text-tea-green font-extrabold text-center z-10">
+                <div className="text-2xl sm:text-7xl text-tea-green font-extrabold text-center z-10">
                     MY NAME IS ANDY JOHNSON
                 </div>
-                <div className="text-xl text-tea-green text-center z-10">
+                <div className="text-sm sm:text-xl text-tea-green text-center z-10">
                     a fullstack software engineer who designs and builds end to end web solutions
                 </div> 
                 <div className="flex flex-row z-10">
