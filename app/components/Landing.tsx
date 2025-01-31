@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import locationIcon from "../../public/location.png";
 import Image from 'next/image';
 import github from '../../public/github.png';

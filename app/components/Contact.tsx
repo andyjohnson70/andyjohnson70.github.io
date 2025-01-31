@@ -2,7 +2,6 @@ import Image from 'next/image';
 import github from '../../public/github.png';
 import linkedin from '../../public/linkedin.png';
 import email from '../../public/mail.png';
-import resume from '../../public/resume.png';
 
 export default function Contact() {
     return (
@@ -22,11 +21,10 @@ export default function Contact() {
                         </div>
                     </form>
                 </div>
-                <div className="grid grid-rows-2 grid-flow-col gap-5 h-fit">
+                <div className="flex flex-row sm:flex-col gap-5 h-fit">
                     <a className='h-fit' href='https://github.com/andyjohnson70' target="_blank"><Image src={github} width={32} height={32} alt='GitHub Repo' /> GitHub</a>
                     <a className='h-fit' href='https://www.linkedin.com/in/andy-johnson-b48269267/' target="_blank"><Image src={linkedin} width={32} height={32} alt='LinkedIn' /> LinkedIn</a>
                     <a className='h-fit' href='mailto:andyjohnson70@gmail.com' target="_blank"><Image src={email} width={32} height={32} alt='Gmail' /> Email</a>
-                    <a className='h-fit' href='' target="_blank"><Image src={resume} width={32} height={32} alt='Resume' /> Resume</a>
                 </div>
             </div>
         </section>
