@@ -1,17 +1,25 @@
 import Image, { StaticImageData } from 'next/image';
 import github from '../../public/github.png';
-import tft from '../../public/tft-preview.png'
+import tft from '../../public/tft-preview.png';
+import golfAdmin from '../../public/golf-admin-preview.png';
 
 export default function Projects() {
     return(
-        <section id="projects" className="bg-dark-spring-green w-full flex flex-col justify-center p-10">
-            <div className="text-center pb-10 text-3xl underline underline-offset-8 decoration-tea-green">
+        <section id="projects" className="bg-dark-spring-green w-full flex flex-col justify-center p-10 gap-y-10">
+            <div className="text-center text-3xl underline underline-offset-8 decoration-tea-green">
                 Projects
+            </div>
+            <div>
+                <ProjectRow
+                    image={golfAdmin}
+                    title='Golf Tournament Dashboard'
+                    description='An admin and dashboard site for a local golf tournament that my family puts on every summer. Built with React, TypeScript, Node.JS, and utilizes Google Sheets.'
+                    link='https://johnsonopen.com' />
             </div>
             <div>
                 <ProjectRow 
                     image={tft}
-                    title='TFT Rolldown Simulator'
+                    title='Strategy Game Practice Tool'
                     description='A tool that I made to practice my favorite strategy game, Teamfight Tactics, that is build with React, TypeScript, NextJS, PostgreSQL, and deployed and managed with Vercel.'
                     link='https://github.com/andyjohnson70/TFT-Rolldown-Simulator' />
             </div>
